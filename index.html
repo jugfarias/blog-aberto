@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Aberto</title>
+
+    <!-- definição de icone da página -->
+    <link rel="icon" type="image" href="img/icon.png">
+
+    <!-- códigos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- códigos style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <!-- barra de navegação -->
+    <header>
+
+        <nav id="barra-nav">
+
+            <div id="logo">
+                <a href=""#> <img src="img/icon.png" alt="ícone da página, um lápis em cima de um balão de fala rosa dentro de um círculo"> </a>
+            </div>
+
+            <ul>
+                <li class="nav-item active"> <a class="nav-link" href="#inicio"> Início </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#post"> Postagem mais recente </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#criar"> Criar postagem </a> </li>
+            </ul>
+
+        </nav>
+    </header>
+    
+        <!-- hero image -->
+    <section class="bgimage" id="inicio">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-texto">
+
+                    <h1 class="hero-titulo"> Blog Aberto </h1>
+                    <p class="hero-sub"> Conheça essa forma de compartilhar pensamentos. </p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- corpo da página -->
+    <div class="container-fluid">
+        <div class="row corpo-da-pagina">
+
+            <!-- postagens e criar nova postagem -->
+            <div class="col-lg-8">
+
+                <!-- postagens -->
+                <section id="post">
+                    <h2 class="titulo-posts">Postagens</h2>
+                    
+                    <div>
+                        <h3>Bem-vindo/a ao Nosso Blog Comunitário!</h3>
+                        <p>Data de publicação: 29/06/2024</p>
+                        <p>
+                            Olá a todos!
+                            Este é o nosso espaço para compartilhar ideias, histórias e opiniões. 
+                            Aqui, cada um de vocês tem a liberdade de escrever sobre o que quiser, 
+                            seja sobre seus hobbies, suas descobertas, ou até mesmo sobre algo que 
+                            aprenderam recentemente. Este blog é feito para todos, por todos.
+                            Para começar, vou compartilhar uma dica rápida: se você está interessado 
+                            em aprender a criar suas próprias páginas na web, este blog é uma ótima 
+                            maneira de praticar HTML, CSS e JavaScript. Basta explorar o código-fonte 
+                            e ver como tudo funciona!
+                            Mal podemos esperar para ver o que vocês vão postar aqui. Lembrem-se, 
+                            este é um espaço de respeito e colaboração. Aproveitem para aprender e 
+                            se divertir!
+                            Boa escrita e boas postagens!
+                        </p>
+                    </div>
+                    
+                </section>
+
+                <!-- criar nova postagem -->
+                    <section id="criar">
+                    <h2>Adicionar Novo Post</h2>
+
+                    <form id="post-form">
+
+                        <div>
+                            <label for="post-titulo">Título:</label>
+                            <input type="text" id="post-titulo" name="post-titulo" required>
+                        </div>
+
+                        <div>
+                            <label for="post-conteudo">Conteúdo:</label>
+                            <textarea id="post-conteudo" name="post-conteudo" required></textarea>
+                        </div>
+                        
+                        <button type="button" id="publicar">Publicar</button>
+                    </form>
+                    </section>
+
+            </div>
+
+            <div class="col-lg-4">
+                <section id="sobre">
+                    <div class="desc">
+                        <img class="selfie mx-auto" src="img/autor.jpg" alt="gato branco deitado em uma almofada para 
+                        representar a autora da página">
+
+                        <p class="text-center">
+                            Meu nome é Júpiter e eu desenvolvi este site em que as pessoas podem adicionar posts sobre qualquer
+                            assunto de seu interesse. A ideia é ser algo comunitário e colaborativo.
+                        </p>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <a href="https://twitter.com" target="_blank">
+                                        <img class="icone-contato" src="img/twitter.png" alt="logo do twitter">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-3 text-center">
+                                    <a href="https://discord.com" target="_blank">
+                                        <img class="icone-contato" src="img/discord.png" alt="logo do discord">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-3 text-center">
+                                    <a href="https://github.com" target="_blank">
+                                        <img class="icone-contato" src="img/git.png" alt="logo do github">
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-3 text-center">
+                                    <a href="https://reddit.com" target="_blank">
+                                        <img class="icone-contato" src="img/reddit.png" alt="logo do reddit">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <!-- rodapé -->
+     <footer class="footer mt-auto">
+       <div class="rodape text-center p-4">
+            <p>Desenvolvido por Júpiter</p>
+       </div>
+     </footer>
+
+</body>
+</html>
+
